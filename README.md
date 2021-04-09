@@ -12,7 +12,7 @@ for tutorial on how to install AutoHotkey and run the script see
  STEPS-
 create a shortcut for spotify app, right click on it  => properties
 add --minimized tag in the target field
-C:\Users\DELL\AppData\Roaming\Spotify\Spotify.exe --minimized
+Eg: C:\Users\DELL\AppData\Roaming\Spotify\Spotify.exe --minimized, Now
 Shift + right click on the shortcut and copy path of the shortcut
 set the PATH variable accordingly, defined in ^q::
 
