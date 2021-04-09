@@ -1,2 +1,2 @@
 # Spotify-Script
-Script to skip spotify ads
+Script to skip spotify ads using AHK.
