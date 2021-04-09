@@ -20,7 +20,7 @@ to use, close spotify if it is open and press ctrl + q
 the script will stop when the spotify app is closed by the user
 
 sometimes the app sends notifications, the app will glow in orange color in the taskbar
-in the case the script will not play the song, you need to maximize the window once and
+in this case the script will not play the song, you need to maximize the window once and
 and the script will play the song, then you can minimize # Will try to fix this
 
 in case of any other unexpected behaviour kill the AutoHotKey process from the task manager
