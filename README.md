@@ -13,7 +13,7 @@ Script to skip spotify ads using AHK.
 ;create a shortcut for spotify app, right click on it  => properties
 ;add --minimized tag in the target field
 ;C:\Users\DELL\AppData\Roaming\Spotify\Spotify.exe --minimized
-;Shit + right click on the shortcut and copy path of the shortcut
+;Shift + right click on the shortcut and copy path of the shortcut
 ;set the PATH variable accordingly, defined in ^q::
 
 ;to use, close spotify if it is open and press ctrl + q
