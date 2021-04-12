@@ -10,7 +10,7 @@
 ;create a shortcut for spotify app, right click on it  => properties
 ;add --minimized tag in the target field
 ;C:\Users\DELL\AppData\Roaming\Spotify\Spotify.exe --minimized
-;Shift + right click on the shortcut and copy path of the shortcut
+;Shit + right click on the shortcut and copy path of the shortcut
 ;set the PATH variable accordingly, defined in ^q::
 
 ;to use, close spotify if it is open and press ctrl + q
@@ -52,6 +52,10 @@ getSpotifyTitle() {
     Return ""
 }
 
+sleepFor(time_in_ms) {
+	Sleep, %time_in_ms%
+}
+
 getSpotifyHwnd() {
 	
 	
@@ -73,6 +77,8 @@ getSpotifyHwnd() {
     }
     Return ""
 }
+
+
 
 waitForSpotifyToRespond() {
 	DetectHiddenWindows, On
@@ -101,9 +107,12 @@ waitForSpotifyToClose() {
 
 openSpotify(PATH) {
 	
-	Run, %PATH%
+	Run, %PATH%,,,NewPID
+	;MsgBox, pid is %NewPID%
+	Process, Priority, %NewPID%, High
 	Sleep, 10
 	waitForSpotifyToRespond()
+	
 	Return
 }
 closeSpotify() {
@@ -140,8 +149,9 @@ title := getSpotifyTitle()
 Sleep, 5000
 closeSpotify()
 openSpotify(PATH)
+sleepFor(1000)
 sendPlayPause()
-Sleep, 2000
+Sleep, 3000
 title := getSpotifyTitle()
 MsgBox, Script Testing Sucessful, Currently Running: %title%
 Sleep, 3000
@@ -161,7 +171,9 @@ Loop
 		Sleep, 10
 		closeSpotify()
 		Sleep, 50
+		sleepFor(2000)
         openSpotify(PATH)
+		sleepFor(2000)
 		sendPlayPause()
 		Sleep, 2000
 		;MsgBox, Stopped the ad and continued your song!:)
