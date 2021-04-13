@@ -25,6 +25,6 @@ in this case the script might not play the song, you need to maximize the window
 and the script will play the song, then you can minimize # Will try to fix this
 
 In case of any other unexpected behaviour kill the AutoHotKey process from the task manager
-Script will might not play the track if someother media is running along with spotify. # Will try to fix this
+Script might not play the track if someother media is running along with spotify. # Will try to fix this
 
 After prolonged use the script may not restart the app / Play the next track when advert an advert comes. Maximizing the once will do the job.
