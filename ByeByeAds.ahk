@@ -1,4 +1,4 @@
-; See README for instructions
+; Please See README for Instructions
 ; Made by RamneekSingh24
 
 DetectHiddenWindows, On
