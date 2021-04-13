@@ -114,6 +114,7 @@ sendPlayPause() {
 ^q::
 
 DetectHiddenWindows, On
+
 PATH := "D:\Desktop\SpotifyWithoutAds.lnk"
 
 openSpotify(PATH)
@@ -145,7 +146,7 @@ Loop
 		closeSpotify()
 		Sleep, 50
 		sleepFor(2000)
-        openSpotify(PATH)
+         	openSpotify(PATH)
 		sleepFor(2000)
 		sendPlayPause()
 		Sleep, 2000
